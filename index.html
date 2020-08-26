@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nino Muring</title>
+
+        <meta name="viewport" content="width=device-width",
+        initial-scale=1, maximum-scale=1, minimum-scale=1/>
+
+        <link rel="stylesheet" type="text/css" href="default.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/logo.png" alt="logo">
+            <a target="_blank" href="#">Source code</a>
+        </header>
+
+        <section class="s1">
+            <div class="main_container">
+                <div class="section_one_wrapper">
+                    <div class="gallery_container">
+                        <div class="slide_container">
+                            <div onclick="plusSlides(-1)" class="left_arrow"><span class="arrow arrow_left"></span></div>
+                            <div onclick="plusSlides(1)" class="right_arrow"><span class="arrow arrow_right"></span></div>
+                            <div class="image_holder">
+                                <img src="images/img_1.jpg">
+                            </div>
+                            <div class="image_holder">
+                                <img src="images/img_2.jpg">
+                            </div>
+                            <div class="image_holder">
+                                <img src="images/img_3.jpg">
+                            </div>
+                            <div class="image_holder">
+                                <img src="images/img_4.jpg">
+                            </div>
+                            <div id="dots_container"></div>
+                        </div>
+                    </div>
+            
+                    <div class="contact_form">
+                        <h3 style="text-align: center; margin: 10px;">Get in Touch</h3>
+                        <form action="" id="contact_form">
+                            <label for="">Name</label>
+                            <input class="input_field" type="text" name="name">
+        
+                            <label for="">Subject</label>
+                            <input class="input_field" type="text" name="subject">
+        
+                            <label for="">Email</label>
+                            <input class="input_field" type="text" name="email">
+        
+                            <label for="">Message</label>
+                            <textarea class="input_field" type="text" name="message"></textarea>
+        
+                            <input id="submit_btn" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s2">
+            <div class="main_container">
+                <div class="section_title">
+                    <h1 style="text-align: center; color: #fff;">Some of my previous work</h1>
+                </div>
+
+                <div class="works_wrapper">
+
+                    <div class="post">
+                        <img class="thumbnail" src="images/tap.jpg" alt="">
+                        <div class="work_preview">
+                            <h4 class="work_title">Task Assigning and Planning</h4>
+                            <p class="work_intro">A mobile application that will allow user
+                                to start a plan and manage given tasks. </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="images/digiart.jpg" alt="">
+                        <div class="work_preview">
+                            <h4 class="work_title">Freelance Digital Artist</h4>
+                            <p class="work_intro">Digital artwork that is built from
+                                vector illustration software like Adobe Photoshop/Illustrator.
+                            </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="images/graphic_design.jpg" alt="">
+                        <div class="work_preview">
+                            <h4 class="work_title">Freelance Graphic Designer</h4>
+                            <p class="work_intro">Designing occasional tarpaulins, business logo, and 
+                                graphic advertisement.
+                            </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="s1">
+            <div class="main_container">
+
+                <div class="about_wrapper">
+                    <div class="about_me">
+                        
+                        <h3>More about me</h3>
+                        <p>I like exploring the trends of technology that can give
+                            knowledge to contribute for the betterment of the society.
+                        </p>
+
+                        <p>I always take advantage of using the internet to learn more.
+                        </p>
+
+                        <hr>
+
+                        <h3>Expertise</h3>
+                        
+                        <p>A front-end developer with primary focused on React. <a target="_blank" href="#">
+                            Download Resume
+                        </a></p>
+
+                        <div id="skills">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Java</li>
+                                <li>React</li>
+                                <li>Javascript</li>
+                            </ul>
+
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="social_links">
+                        <img id="social_img" src="images/profile.jpg" alt="">
+                        <h2>Find me on Social Media</h2>
+                        <a target="_blank" href="#">Facebook: @omnuirniinngin</a>
+                        <br>
+                        <a target="_blank" href="#">Instagram: @omnuirniinngin</a>
+                        <br>
+                        <a target="_blank" href="#">Twitter: @omnuirniinngin</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script src= "index.js"></script>
+    </body>
+</html>
