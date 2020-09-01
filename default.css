@@ -59,22 +59,19 @@ header{
     border-radius: 20px;
 }
 
-#text_logo a:hover{
-    color: var(--mainText);
-}
-
 header a{
+    color: var(--secondaryColor);
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: var(--mainText);
+    
 }
 
-header a{
+header #text_source a{
     transition: all 0.3 ease 0s;
 }
 
-header a:hover{
+header #text_source :hover{
     color: var(--secondaryColor);
 }
 
@@ -82,7 +79,6 @@ header a:hover{
     overflow: auto;
     border-bottom: 2px solid var(--borderColor);
     background-color: #fff;
-    padding-bottom: 50px;
 }
 .s2{
     overflow: auto;
@@ -130,12 +126,17 @@ header a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top: 50px;
+    padding-bottom: 50px;
     gap: 100px;
 }
 #skills{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--mainColor);
+}
+
+#skills li{
+    color: var(--secondaryColor);
 }
 
 .social_links{
@@ -207,12 +208,6 @@ header a:hover{
 @media screen and (max-width: 1200px){
     .main_container{
         width: 95%;
-    }
-}
-
-@media screen and (min-width: 800px){
-    .gallery_container{
-        width: 100%;
     }
 }
 
