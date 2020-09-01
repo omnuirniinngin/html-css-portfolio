@@ -89,156 +89,6 @@ header a:hover{
     background-color: var(--mainColor);
 }
 
-.gallery_container{
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    max-width: 80%;
-    user-select: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-sizing: border-box;
-    margin-top: 50px;
-    /* float: left; */
-
-}
-
-.gallery_container .slide_container{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-}
-
-.gallery_container .slide_container .image_holder{
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    opacity: 0;
-}
-
-.gallery_container .slide_container .image_holder img{
-    width: 100%;
-    height: 500px;
-    object-fit: none;
-}
-
-.gallery_container .slide_container .left_arrow, .gallery_container .slide_container .right_arrow{
-    width: 50px;
-    background: #00000036;
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    transition: background 0.5s;
-    height: 72px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.gallery_container .slide_container .right_arrow{
-    left: auto;
-    right: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    
-}
-.gallery_container .slide_container .left_arrow:hover, .gallery_container .slide_container .right_arrow:hover{
-    background: #000000a8;
-    cursor: pointer;
-}
-
-.gallery_container .slide_container .arrow{
-    display: inline-block;
-    border: 3px solid white;
-    width: 10px;
-    height: 10px;
-    border-left: none;
-    border-bottom: none;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.gallery_container .slide_container .arrow.arrow_left{
-    transform: rotateZ(-135deg);
-}
-.gallery_container .slide_container .arrow.arrow_right{
-    transform: rotateZ(45deg);
-}
-.gallery_container .slide_container #dots_container{
-    width: 100%;
-    height: 11px;
-    text-align: center;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    padding-bottom: 35px;
-}
-.gallery_container .slide_container #dots_container .dots{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-left: 10px;
-    background-color: #bbb;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-.gallery_container #dots_container .dots:hover, .gallery_container #dots_container .dots.active{
-    background-color: #717171;
-
-}
-
-.gallery_container .moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-
-}
-.gallery_container .moveLeftNextSlide{
-    animation-name: moveLeftNext;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
-}
-@keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-
-.gallery_container .moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-.gallery_container .moveRightPrevSlide{
-    animation-name: moveRightPrev;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
-}
-@keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-
 .works_wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
@@ -353,14 +203,16 @@ header a:hover{
     margin: 0 auto;
 }
 
-@media screen and (max_width: 1200px){
+@media screen and (max-width: 1200px){
     .main_container{
         width: 95%;
     }
 }
 
-@media screen and (max_width: 800px){
-    
+@media screen and (min-width: 800px){
+    .gallery_container{
+        width: 100%;
+    }
 }
 
 
