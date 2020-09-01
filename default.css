@@ -81,6 +81,7 @@ header a:hover{
 .s1{
     overflow: auto;
     border-bottom: 2px solid var(--borderColor);
+    background-color: #fff;
     padding-bottom: 50px;
 }
 .s2{
