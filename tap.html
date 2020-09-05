@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    </style>
+
+    <title>Task Assigning and Planning</title>
+</head>
+<body>
+    <header>
+        <a id="text_logo" href="https://omnuirniinngin.github.io" >import portfolio;</a>
+        <a id="text_source" target="_blank" href="https://github.com/omnuirniinngin/IT-Project-TAP">Source code</a>
+    </header>
+
+    <div class="s1">
+        <div class="main_container">
+            <div class="intro-wrapper">
+                <div class="left-column">
+                    <img src="images/ic_launcher-web.png" alt="">
+                </div>
+                <div class="right-column">
+                    <h1>Task Assigning and Planning</h1>
+                    <p>A mobile application for Task Assigning that is efficient, effective, and convenient <br> for
+                        users and is concerned for monitoring and controlling the project development process.
+                    </p>
+                </div>
+
+                <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.png" ></div>
+                    <div class="swiper-slide"><img src="images/1.png" ></div>
+                    <div class="swiper-slide"><img src="images/1.png" ></div>
+                    <div class="swiper-slide"><img src="images/1.png" ></div>
+                    <div class="swiper-slide"><img src="images/1.png" ></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="s2">
+        <div class="main_container">
+            <div class="documentation">
+                <div class="figures">
+                    <img src="images/diagram_1.png" alt="">
+                    <p>Context Diagram</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="main_container">
+        <div class="swiper-width">
+            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
+</body>
+</html>
