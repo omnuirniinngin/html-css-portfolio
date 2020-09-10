@@ -234,7 +234,7 @@ header #text_source :hover{
     height: 310px;
     font-size: 18px;
 
-    /* Center slide text vertically */
+    /* Center slide vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -256,6 +256,16 @@ header #text_source :hover{
 
 .documentation{
     margin-top: 20px;
+}
+
+.documentation h3{
+    color: var(--secondaryColor);
+    text-align: center;
+}
+
+.documentation p{
+    text-align: justify;
+    color: var(--secondaryColor);
 }
 
 .figures{
