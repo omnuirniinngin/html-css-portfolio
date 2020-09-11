@@ -219,16 +219,17 @@ header #text_source :hover{
 .tap-icon{
     padding: 10px;
     grid-area: tap-icon;
-    border: 1px dashed dimgray;
 }
+.tap-icon img{
+    border-radius: 20px;
+}
+
 .top-right{
     grid-area: top-right;
-    border: 1px dashed dimgray;
     align-self: center;
 }
 .bot-right{
     grid-area: bot-right;
-    border: 1px dashed dimgray;
     overflow: hidden;
 }
 
@@ -236,8 +237,7 @@ header #text_source :hover{
     width: 100%;
     max-width: 60%;
     height: 100%;
-    border: 1px dashed dimgray;
-
+    float: left;
   }
 
 .swiper-slide img{
